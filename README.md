@@ -1,7 +1,8 @@
 # Data Analysis Process of a Research file
 ## Clean | Transform | Visualize
 ### Guide on YT [here](https://www.youtube.com/watch?v=pKvWD0f18Pc&list=WL&index=22&t=90s).
-### Final file transformed with some Pivot Tables [here](https://docs.google.com/spreadsheets/d/1GyXndVZ3Kn_LxUhoGq8zmp9YSbwvhBi3wCBinJtSfUk/edit?usp=sharing).
+### Initial file [here](https://docs.google.com/spreadsheets/d/1qin5HeRbA0WxxB_R8AwoEcF-GsyaleAj/edit#gid=745878628).
+### Final file + some Pivot Tables [here](https://docs.google.com/spreadsheets/d/1GyXndVZ3Kn_LxUhoGq8zmp9YSbwvhBi3wCBinJtSfUk/edit?usp=sharing).
 
 ```python
 import pandas as pd
