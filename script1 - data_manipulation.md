@@ -1,3 +1,7 @@
+# Data Analysis Process of a Research file
+## Cleaning, Transform & Visualize
+### guide (here)[https://www.youtube.com/watch?v=pKvWD0f18Pc&list=WL&index=22&t=90s].
+
 ```python
 import pandas as pd
 import os
