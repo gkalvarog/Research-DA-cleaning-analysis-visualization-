@@ -19,15 +19,9 @@ dataframe = pd.read_excel(pwd + "/Data - Survey Monkey Output - edited.xlsx", sh
 
 # To see the dataframe, unlock the line below. 
 # dataframe
-```
 
-
-```python
 df_copy = dataframe.copy()
-```
 
-
-```python
 # Wanna see all the columns of the data frame? Unlock the line below.
 # df_copy.columns
 ```
@@ -92,14 +86,10 @@ questions = questions.dropna()
 # Time to join. A left join will keep the left sheet and insert in it items from the right sheet, dropping the rest of the right sheet.
 df_merged = pd.merge(left=df_melted, right=questions, how="left", left_on="Question + Subquestion", right_on="Question + Subquestion VALUES ONLY")
 
-print(f"Original Data: {len(df_melted)}.\nMerged Data: {len(df_merged)}")
 
 # Unlock to see the merge:
 # df_merged
 ```
-
-    Original Data: 17028.
-    Merged Data: 17028
 
 
 
@@ -113,6 +103,7 @@ new_respondents = respondents.groupby("Question")["Respondent ID"].nunique().res
 # In order to rename a column, we use 'rename()' and as an argument, we send in a dictionary. In it, the key is the previous name, and the value is the new name. 
 new_respondents.rename(columns={"Respondent ID": "Respondents"}, inplace=True)
 
+# Unlock to see:
 # new_respondents
 ```
 
@@ -170,13 +161,8 @@ columns_to_modify = {
 output.rename(columns=columns_to_modify, inplace=True)
 
 # Unlock to see the output:
-output
+# output
 
 # Export the file if you wanna work on Tableau, Power BI, Looker, etc... Remember to remove the Index (1st col)
-output.to_excel(pwd + "/Final Output.xlsx", index=False)
-```
-
-
-```python
-
+# output.to_excel(pwd + "/Final Output.xlsx", index=False)
 ```
